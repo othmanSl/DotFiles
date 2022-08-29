@@ -1,0 +1,56 @@
+"This is the plugin erea: put plugins between the two calls
+call plug#begin()
+Plug 'neoclide/coc.nvim', {'branche': 'release'}
+Plug 'EdenEast/nightfox.nvim' " Vim-Plug
+call plug#end()
+"Use VIM settings rather than Vi settings
+set nocompatible
+"Enable syntax highliting
+syntax on
+colorscheme nightfox
+
+"Show line numbers
+set number
+
+"Show relative numbers
+set rnu
+
+"Status bar
+set laststatus=2
+
+" Provides tab-completion for all file-related tasks
+set path+=**
+
+" Display all matching files when we tab complete (use :find)
+set wildmenu
+
+"Change leader key
+let mapleader= ","
+
+"Highlighting sreach options
+set nohlsearch
+
+"Incremental search
+set incsearch
+
+"Autoindentation
+set autoindent
+filetype plugin indent on
+
+"Indentation by 4 spaces
+set sts=4
+
+"Opening a new file without saving the current buffer causes files to be hidden
+"set hidden
+
+"Page start scrolling when you are 8 lines from the buttom
+set scrolloff=8
+
+"Toggle insert/normal mode with ,+i
+nnoremap <silent> <Leader>i i
+inoremap <silent> <Leader>i <Esc>
+
+"Toggle boundary column at 80 char ( ,c )
+nnoremap <silent> <leader>c :execute "set colorcolumn="
+                  \ . (&colorcolumn == "" ? "80" : "")<CR>
+
