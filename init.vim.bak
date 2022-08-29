@@ -1,5 +1,7 @@
 "This is the plugin erea: put plugins between the two calls
 call plug#begin()
+"you should add extentions with :CocInstall <extention>
+"For extentions visit https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
 Plug 'neoclide/coc.nvim', {'branche': 'release'}
 Plug 'EdenEast/nightfox.nvim' " Vim-Plug
 call plug#end()
@@ -7,7 +9,8 @@ call plug#end()
 set nocompatible
 "Enable syntax highliting
 syntax on
-colorscheme nightfox
+"Visit neoclide/coc.nvim for other schemes
+colorscheme nightfox 
 
 "Show line numbers
 set number
