@@ -23,7 +23,7 @@ set path+=**
 set wildmenu
 
 "Change leader key
-let mapleader= ","
+let mapleader= " "
 
 "Highlighting sreach options
 set nohlsearch
